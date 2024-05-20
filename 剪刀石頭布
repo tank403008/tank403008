@@ -1,0 +1,27 @@
+from random import randint
+
+choice = ["rock","paper","scissors"]
+def main():
+    computer = choice[randint(0,2)]
+
+    player = input("your choice").lower
+    print("computer chose :" + computer)
+
+    if player == computer:
+        print("平手")
+    elif player == "rock" and computer == "paper":
+        print("你輸了")
+    elif player == "rock" and computer == "scissors":
+        print("你贏了")
+    elif player == "paper" and computer == "scissors":
+        print("你輸了")
+    elif player == "paper" and computer == "rock":
+        print("你贏了")
+    elif player == "scissors" and computer == "rock":
+        print("你輸了")
+    elif player == "scissors" and computer == "paper":
+        print("你贏了")
+
+    main()
+
+main()
